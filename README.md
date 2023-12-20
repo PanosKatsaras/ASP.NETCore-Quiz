@@ -13,7 +13,7 @@ Visual Studio or Visual Studio Code
 .NET 6 SDK
 Microsoft SQL Server 2022
 
-Getting Started
+Getting Started:
 To run this project locally, follow these steps:
 Clone this repository: git clone https://github.com/username/repository.git
 Open the project in Visual Studio or Visual Studio Code.
