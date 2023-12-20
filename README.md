@@ -1,9 +1,10 @@
 # Quiz App
 
 ## Overview
-This project is an ASP.NET Core Quiz application, 
 
-with SQL Server Database Connection, 
+This project is an ASP.NET Core Quiz application 
+
+with SQL Server Database Connection 
 
 CRUD Operations 
 
