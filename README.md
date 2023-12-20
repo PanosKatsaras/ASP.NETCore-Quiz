@@ -52,6 +52,8 @@ Ensure the application successfully connects to the local database specified in 
 
 Controllers: Contains controllers for handling HTTP requests
 
+
 Models: Data models used in the application
+
 
 Views: Contains the UI components or views
