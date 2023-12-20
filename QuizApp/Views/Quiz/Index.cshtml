@@ -1,0 +1,84 @@
+﻿@model IEnumerable<QuizApp.Models.Quiz>
+@*Index page*@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Quiz</h1>
+@*A button that send you to Create page but only if you are a registered user*@
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">Create New</a>
+</p>
+@*Information toggle button*@
+<p class="d-inline-flex gap-1">
+    <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+        Quiz Information
+    </button>
+</p>
+<div class="collapse" id="collapseInfo">
+    <div class="card card-body">
+        You can find the correct answer in Details.
+    </div>
+</div>
+@*Alert success message after creating*@
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show"style="width:70%" role="alert">
+        <strong>CREATED!</strong>@TempData["AlertMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+@*Alert delete message after deleting*@
+@if (TempData["DeleteMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" style="width:70%" role="alert">
+        <strong>DELETED!</strong>@TempData["DeleteMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+@*A table with Question and answers.Also buttons for Edit,Details and Delete*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Question)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnswerA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnswerB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnswerC)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@*A foreach loop to show Quiz items *@
+@*Buttons for Edit and Delete actions only for registered user*@
+@foreach (var item in Model) {
+        <tr>
+            <td id="item">
+                @Html.DisplayFor(modelItem => item.Question)
+            </td>
+            <td id="item">
+                @Html.DisplayFor(modelItem => item.AnswerA)
+            </td>
+            <td id="item">
+                @Html.DisplayFor(modelItem => item.AnswerB)
+            </td>
+            <td id="item">
+                @Html.DisplayFor(modelItem => item.AnswerC)
+            </td>
+            <td>
+                <a class="btn btn-outline-secondary" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i>Edit</a> |
+                <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-eye"></i>Details</a> |
+                <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash"></i>Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+

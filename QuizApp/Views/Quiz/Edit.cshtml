@@ -1,0 +1,53 @@
+﻿@model QuizApp.Models.Quiz
+@*Edit page*@
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+@*Edit Form and a button to go Back to List*@
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Question" class="control-label"></label>
+                <input asp-for="Question" class="form-control" />
+                <span asp-validation-for="Question" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnswerA" class="control-label"></label>
+                <input asp-for="AnswerA" class="form-control" />
+                <span asp-validation-for="AnswerA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnswerB" class="control-label"></label>
+                <input asp-for="AnswerB" class="form-control" />
+                <span asp-validation-for="AnswerB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnswerC" class="control-label"></label>
+                <input asp-for="AnswerC" class="form-control" />
+                <span asp-validation-for="AnswerC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CorrectAnswer" class="control-label"></label>
+                <input asp-for="CorrectAnswer" class="form-control" />
+                <span asp-validation-for="CorrectAnswer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-outline-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

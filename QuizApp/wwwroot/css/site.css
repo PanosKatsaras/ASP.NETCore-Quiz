@@ -1,0 +1,80 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f3f3, #e3e7e7, #d6dbd9, #ccceca);
+}
+
+input, btn btn-primary {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+header button {
+    margin-top: 10px;
+}
+
+#text {
+    color: black;
+}
+
+.card.card-body {
+    background-color: lightcyan;
+    width: 73%;
+}
+
+.pb-3 a:focus {
+    box-shadow: none !important;
+}
+
+form .btn.btn-outline-success {
+    box-shadow: none !important;
+}
+
+.display-4 {
+    color:greenyellow !important;
+}
+
+.nav-link.text-dark:hover {
+    color:forestgreen !important;
+}
+
+table, #item {
+    padding-top: 20px !important;
+}
+
+
+
+
+
+
+
+
+
