@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an ASP.NET Core Quiz application with SQL Server Database Connection,
+This project is an ASP.NET Core (MVC) Quiz application with SQL Server Database Connection,
 
 CRUD Operations and Register/login with email and password credentials.
 
