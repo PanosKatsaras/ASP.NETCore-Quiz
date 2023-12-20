@@ -1,6 +1,6 @@
 # Quiz App
 
-# Overview
+## Overview
 This project is an ASP.NET Core application.
 
 # Technologies Used
