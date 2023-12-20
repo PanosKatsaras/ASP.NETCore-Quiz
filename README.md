@@ -4,7 +4,7 @@
 
 This project is an ASP.NET Core (MVC) Quiz application with SQL Server Database Connection,
 
-CRUD Operations and Register/login with email and password credentials.
+CRUD Operations and Register/Login with Email and Password credentials.
 
 You can Create/Edit/Delete only if you are Registered User.
 
