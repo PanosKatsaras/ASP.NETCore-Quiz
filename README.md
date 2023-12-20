@@ -35,7 +35,7 @@ Open the project in Visual Studio 2022
 Create a new file named appsettings.local.json (or any suitable name) in the project root.
 This file will contain local configurations including the database connection string.
 
-Open SQL Server Management Studio (SSMS) or use SQL Server Object Explorer in Visual Studio.
+Open SQL Server Management Studio (SSMS) or use SQL Server Object Explorer in Visual Studio 2022.
 
 Connect to the LocalDB instance (usually (LocalDB)\MSSQLLocalDB).
 
