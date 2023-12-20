@@ -14,7 +14,7 @@ Before cloning the project, ensure you have the following installed:
 Visual Studio or Visual Studio Code
 
 
-.NET 6 SDK
+.NET 6
 
 
 Microsoft SQL Server 2022
