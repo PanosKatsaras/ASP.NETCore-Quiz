@@ -1,7 +1,13 @@
 # Quiz App
 
 ## Overview
-This project is an ASP.NET Core application, with SQL Server Database Connection and CRUD Operations.
+This project is an ASP.NET Core Quiz application, 
+
+with SQL Server Database Connection, 
+
+CRUD Operations 
+
+and Register/login user with email and password credentials.
 
 ## Technologies Used
 ASP.NET Core (.NET 6)
@@ -11,7 +17,7 @@ Microsoft SQL Server 2022
 ## Prerequisites
 Before cloning the project, ensure you have the following installed:
 
-Visual Studio or Visual Studio Code
+Visual Studio 2022
 
 
 .NET 6
@@ -25,7 +31,7 @@ To run this project locally, follow these steps:
 
 Clone this repository: git clone https://github.com/username/repository.git
 
-Open the project in Visual Studio or Visual Studio Code.
+Open the project in Visual Studio 2022
 
 Create a new file named appsettings.local.json (or any suitable name) in the project root.
 This file will contain local configurations including the database connection string.
