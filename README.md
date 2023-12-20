@@ -20,7 +20,7 @@ Open the project in Visual Studio or Visual Studio Code.
 
 
 
-Folder Structure
+Folder Structure:
 /Controllers: Contains controllers for handling HTTP requests
 /Models: Data models used in the application
 /Views: Contains the UI components or views
