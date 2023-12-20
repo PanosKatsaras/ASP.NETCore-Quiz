@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project is an ASP.NET Core Quiz application with SQL Server Database Connection, CRUD Operations 
+This project is an ASP.NET Core Quiz application with SQL Server Database Connection,
 
-and Register/login User with email and password credentials.
+CRUD Operations and Register/login with email and password credentials.
 
 You can Create/Edit/Delete only if you are Registered User.
 
