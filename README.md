@@ -28,7 +28,7 @@ Microsoft SQL Server 2022
 To run this project locally, follow these steps:
 
 
-Clone this repository: git clone https://github.com/username/repository.git
+Clone this repository: git clone (https://github.com/PanosKatsaras/ASP.NETCore-Quiz.git)
 
 Open the project in Visual Studio 2022
 
