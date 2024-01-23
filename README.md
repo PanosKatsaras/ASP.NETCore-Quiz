@@ -33,21 +33,7 @@ Clone this repository: git clone (https://github.com/PanosKatsaras/ASP.NETCore-Q
 Open the project in Visual Studio 2022
 
 Create a new file named appsettings.local.json (or any suitable name) in the project root.
-This file will contain local configurations including the database connection string.
-
-Open SQL Server Management Studio (SSMS) or use SQL Server Object Explorer in Visual Studio 2022.
-
-Connect to the LocalDB instance (usually (LocalDB)\MSSQLLocalDB).
-
-Use the "Attach Database" option to create or attach a .mdf file to the LocalDB instance.
-
-Open appsettings.local.json in a text editor.
-
-Add the database connection string in JSON format.
-
-Identify where the application reads the configuration settings.
-
-Modify the code to load configurations from appsettings.local.json or use environment variables if applicable.
+This file will contain local configurations including the database connection string as "DefaultConnection".
 
 Build and run the ASP.NET project in Visual Studio or using command-line tools.
 
